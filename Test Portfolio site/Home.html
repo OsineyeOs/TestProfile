@@ -1,59 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Profile</title>
-  <link rel="stylesheet" href="home.css">
-  <!-- Font Awesome for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
-        integrity="sha512-HHsOCa2rIQ0hI+rhZ6B1N5scw+dh07DxXJfknmH9HpcDj94W6VQg8x9q3xObwouO97VUzYw8eqW5P4hZU4h+0g==" 
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase - Your Online Store</title>
+  <link rel="stylesheet" href="home.css" />
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Your Name</h1>
-      <button id="toggleDetails">Hide Details</button>
-    </header>
-    
-    <section id="profile">
-      <div class="profile-card">
-        <div class="profile-info">
-          <h2>About Me</h2>
-          <p><strong>Experience:</strong> Over X years in [Your Field]</p>
-          <p><strong>Address:</strong> 123 Main Street, Your City, Your Country</p>
-          <p><strong>Contact:</strong> <a href="mailto:email@example.com">email@example.com</a> | +1234567890</p>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="#">ShopEase</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <!-- Replace with your cart icon -->
+        <a href="#"><img src="cart-icon.svg" alt="Cart" /></a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Discover Amazing Products</h1>
+        <p>Your one-stop shop for quality and style.</p>
+        <a href="#products" class="btn">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <!-- Replace with your hero image -->
+        <img src="images/Task.jpg" alt="Shopping" />
+      </div>
+    </div>
+  </section>
+  <!-- Features Section -->
+  <section id="features">
+    <div class="container">
+      <h2>Why Shop With Us?</h2>
+      <div class="features-grid">
+        <div class="feature">
+          <!-- Replace with your icon -->
+          <img src="images/usersProfile.jpg" alt="Fast Delivery" />
+          <h3>Fast Delivery</h3>
+          <p>Get your products delivered in record time.</p>
         </div>
-        
-        <div class="portfolio">
-          <h2>Portfolio</h2>
-          <div class="portfolio-items">
-            <div class="item">
-              <img src="https://via.placeholder.com/150" alt="Project 1">
-              <h3>Project Title 1</h3>
-            </div>
-            <div class="item">
-              <img src="https://via.placeholder.com/150" alt="Project 2">
-              <h3>Project Title 2</h3>
-            </div>
-            <!-- Add more portfolio items as needed -->
-          </div>
+        <div class="feature">
+          <!-- Replace with your icon -->
+          <img src="quality-products.svg" alt="Quality Products" />
+          <h3>Quality Products</h3>
+          <p>We only stock the best products for our customers.</p>
+        </div>
+        <div class="feature">
+          <!-- Replace with your icon -->
+          <img src="secure-payment.svg" alt="Secure Payment" />
+          <h3>Secure Payment</h3>
+          <p>All transactions are secure and encrypted.</p>
         </div>
       </div>
-    </section>
-    
-    <footer>
-      <h2>Connect with Me</h2>
-      <div class="social-media">
-        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+  <!-- Featured Products Section -->
+  <section id="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="images/Task.jpg" alt="Product 1" />
+          <h3>Product 1</h3>
+          <p>$29.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/SessionByDistribtuin.jpg" alt="Product 2" />
+          <h3>Product 2</h3>
+          <p>$49.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/pipelinedata.jpg" alt="Product 3" />
+          <h3>Product 3</h3>
+          <p>$39.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/Ngnix.jpg" alt="Product 4" />
+          <h3>Product 4</h3>
+          <p>$59.99</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
       </div>
-    </footer>
-  </div>
-  
-  <script src=""></script>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About ShopEase</h2>
+      <p>
+        ShopEase is your trusted online marketplace offering a wide range of products to suit your lifestyle. With a commitment to quality and customer satisfaction, we bring you the best shopping experience online.
+      </p>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 ShopEase. All rights reserved.</p>
+      <div class="social-links">
+        <!-- Replace with your social icons -->
+        <a href="#"><img src="facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="instagram.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+  </footer>
+  <script src="home.js"></script>
 </body>
 </html>
